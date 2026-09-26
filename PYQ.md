@@ -72,6 +72,13 @@
 | **`TextWatcher`** | Text changes | `onTextChanged()` |
 
 
+# Ques. Identify and describe the four main building blocks of the android application architecture.
+
+- An Android application is mainly built using **four major application components**, also called the **four building blocks of Android application architecture:**  
+1) Activity
+2) Service
+3) Broadcast Receiver
+4) Content Provider
 
 
 
