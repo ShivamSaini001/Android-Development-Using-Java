@@ -129,3 +129,19 @@ For example, Android provides content-provider-based access to certain system da
 A Content Provider typically works with a **URI** to identify the data being accessed.
 
 
+# Ques. Difference Between Activity and Service in Android
+
+| Basis | Activity | Service |
+|---|---|---|
+| **Definition** | An Activity represents a **screen or user interface** of an Android application. | A Service is a component used to perform **ongoing work without a user interface**. |
+| **User Interface** | Usually provides a user interface for user interaction. | Does not provide a user interface. |
+| **Main Purpose** | Used to display information and interact with the user. | Used to perform tasks that do not require direct user interaction. |
+| **User Interaction** | Directly interacts with the user. | Normally works without direct user interaction. |
+| **Examples** | Login screen, Home screen, Profile screen, Settings screen. | Music playback, certain ongoing tasks, or other background/foreground work. |
+| **Lifecycle** | Has callbacks such as `onCreate()`, `onStart()`, `onResume()`, `onPause()`, `onStop()`, and `onDestroy()`. | Has callbacks such as `onCreate()`, `onStartCommand()`, and `onDestroy()`. |
+| **How it is started** | Commonly started using `startActivity()`. | Can be started using service APIs such as `startService()` or `startForegroundService()`, depending on the use case. |
+| **User Visibility** | Usually visible to the user while the Activity is in the foreground. | Usually not visible to the user, although a foreground service must show a notification. |
+| **Example in Music App** | Displays the music player screen and controls. | Handles music playback while the user navigates away from the screen, when appropriate. |
+| **UI Components** | Can contain Buttons, TextViews, EditTexts, RecyclerViews, etc. | Does not directly contain UI components. |
+| **Main Role** | **User interface and interaction**. | **Ongoing work without a direct UI**. |
+
