@@ -80,10 +80,52 @@
 3) Broadcast Receiver
 4) Content Provider
 
+- These components are managed by the **Android operating system** and can communicate with each other using **Intents**.
+
+### 1. Activity:-
+
+An **Activity** represents a **single screen or user interface** of an Android application.  
+It is responsible for interacting with the user and displaying information.  
+
+**Examples:** In a shopping application:
+```
+  Login Screen       → LoginActivity
+  Home Screen        → HomeActivity
+  Product Screen     → ProductActivity
+  Cart Screen        → CartActivity
+```
+
+### 2. Service:-
+
+A **Service** is a component that performs **long-running or background work without providing a user interface**.
+
+For example:
+  - Playing music in the background
+  - Performing certain ongoing tasks
+  - Handling work that should continue while the user is not directly interacting with the UI
+
+A Service can continue working even when the user is not currently looking at its UI.
+
+### 3. Broadcast Receiver:-
+
+A **Broadcast Receiver** is a component that **receives and responds to broadcast messages** from the Android system or other applications.  
+Broadcasts can indicate that something has happened.
+
+Examples include:
+- Device has finished booting
+- Battery state has changed
+- Connectivity-related system events
+- An application sends a broadcast
 
 
+### 4. Content Provider:-
 
+A **Content Provider** is a component that provides a **standard way to access and share structured data** between applications or between components.  
+For example, Android provides content-provider-based access to certain system data such as:
+- Contacts
+- Media
+- Calendar data
 
-
+A Content Provider typically works with a **URI** to identify the data being accessed.
 
 
