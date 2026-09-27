@@ -29,7 +29,7 @@
     
     button.setOnClickListener(new View.OnClickListener() {
       @Override
-      protected void onClick(View v){
+      public void onClick(View v){
         Toast.makeText(this,
             "Button Clicked",
             Toast.LENGTH_SHORT).show();
